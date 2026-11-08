@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+body {
+  background-image: url("gambar/oip.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Top Menu */
+.top-menu {
+  max-width: 1195px;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 15px;
+}
+
+.top-menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-menu ul li {
+  border-left: 2px solid white;
+  padding: 8px 10px;
+}
+
+.top-menu ul li:last-child {
+  border-right: 2px solid white;
+}
+
+.top-menu ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.top-menu ul li a:hover {
+  font-weight: bold;
+}
+
+/* Header */
+.header {
+  border: 1px solid white;
+  max-width: 1195px;
+  width: 100%;
+  height: 150px;
+  margin: 8px auto;
+  background-image: url("gambar/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Nav Bar */
+.nav-bar {
+  border: 1px solid white;
+  max-width: 1195px;
+  width: 100%;
+  margin: 8px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-bar .menu-bar a {
+  text-transform: uppercase;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-bar .menu-bar a:hover {
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.nav-bar form input[type="search"] {
+  padding: 8px;
+  background-color: rgb(240, 233, 233);
+  border: 1px solid white;
+  color: white;
+}
+
+.nav-bar form input[type="submit"] {
+  padding: 8px;
+  background-color: rgb(240, 233, 233);
+  border: 1px solid rgb(216, 209, 209);
+  color: black;
+  cursor: pointer;
+}
+.nav-bar form input[type="submit"]:hover {
+  background-color: red;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+
+/* Konten Utama */
+.konten {
+  max-width: 1195px;
+  margin: 8px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Sidebar Kiri */
+.kiri {
+  width: 25%;
+}
+
+.kiri fieldset {
+  border: 1px solid white;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.kiri legend {
+  padding: 0 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.kiri ul li {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.kiri ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.kiri ul li a:hover {
+  letter-spacing: 2px;
+}
+
+/* Gallery Marquee */
+.kiri marquee {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.kiri marquee img {
+  height: 300px;
+  width: auto;
+  border: 1px solid white;
+  margin: 0 15px;
+}
+
+/* Sisi Kanan (Artikel) */
+.kanan {
+  width: 75%;
+  border: 1px solid white;
+  padding: 15px;
+}
+
+.kanan h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.kanan p {
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 14px;
+}
+/* gallery */
+.daftar-galeri img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efek saat foto di-hover (diarahkan kursor) */
+.daftar-galeri img:hover {
+  transform: scale(1.08); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
+  border-color: Tomato; }
+/* Styling Khusus Konten Beranda di index.html */
+
+.home-container {
+  color: white;
+}
+
+.home-container h2 {
+  margin-bottom: 15px;
+}
+
+.home-container p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+/* Styling Khusus Konten Profil di profile.html */
+
+.profile-container {
+  color: white;
+}
+
+.profile-container h2 {
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  border: 3px solid rgb(232, 225, 224);
+  border-radius: 7px;
+}
+
+.profile-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.profile-info strong {
+  color: #ffffff;
+}
+.fieldset-kontak {
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.fieldset-kontak legend {
+  font-weight: bold;
+}
+
+.fieldset-kontak ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.fieldset-kontak a {
+  color: white;
+  text-decoration: none;
+}
+/* Styling khusus untuk box artikel di article.html */
+
+.article-box {
+  border: 2px solid white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.article-box legend {
+  font-weight: bold;
+}
+
+.article-box p {
+  text-align: justify;
+  line-height: 1.5;
+  font: verdana;
+  font-size: 17px;
+}
+
+.article-box a {
+  color: white;
+  text-decoration: underline;
+}
+
+.article-box a:hover {
+  color: #0cdb43;
+}
+/* Styling Khusus Form Buku Tamu di guestbook.html */
+
+.guestbook-container p {
+  text-align: justify;
+}
+
+.guestbook-form label {
+  font-weight: bold;
+  color: white;
+}
+
+.guestbook-form input[type="text"],
+.guestbook-form input[type="email"],
+.guestbook-form textarea {
+  width: 100%;
+  max-width: 320px;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Tombol Kirim */
+.btn-submit {
+  padding: 6px 15px;
+  background-color: Tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-submit:hover {
+  background-color: #e04328;
+}
+
+/* Tombol Reset */
+.btn-reset {
+  padding: 6px 15px;
+  cursor: pointer;
+  background-color: #e70a0a;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-reset:hover {
+  background-color: #800c0c;
+}
+
+/* Catatan Keterangan */
+.guestbook-note {
+  font-size: 12px;
+  color: #eeeeee;
+  margin-top: 15px;
+  text-align: justify;
+}
+/* Styling Khusus Konten Tutorial di tutorial.html */
+
+.tutorial-container {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.tutorial-container h2 {
+  margin-bottom: 15px;
+}
+
+.tutorial-container p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.tutorial-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.tutorial-list li {
+  margin-bottom: 20px;
+}
+
+.tutorial-list a {
+  color: rgb(200, 211, 75);
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.tutorial-list a:hover {
+  text-decoration: underline;
+}
+
+.tutorial-list p {
+  margin-top: 5px;
+  color: #e0e0e0;
+}
+/* Footer */
+.footer {
+  max-width: 1195px;
+  width: 100%;
+  padding: 15px 0;
+  margin: 8px auto;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 13px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .konten {
+    flex-direction: column;
+  }
+
+  .kiri,
+  .kanan {
+    width: 100%;
+  }
+
+  .nav-bar .menu-bar {
+    /* flex-direction: column; */
+    /* gap: 10px; */
+    display: none;
+  }
+
+  .top-menu ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

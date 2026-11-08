@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Biodata Diri</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border: 4px solid black;
+            padding: 25px 30px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #777;
+            margin: 15px 0;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 15px;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 4px 0;
+            vertical-align: top;
+            font-size: 15px;
+        }
+
+        td.label {
+            width: 170px;
+        }
+
+        /* Styling Form Inputs */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 14px;
+            padding: 2px 4px;
+            border: 1px solid #7e99b8;
+            box-sizing: border-box;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="url"] {
+            width: 250px;
+        }
+
+        textarea {
+            width: 280px;
+            height: 80px;
+            resize: both;
+        }
+
+        .inline-inputs {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .inline-inputs input[type="text"] {
+            width: 130px;
+        }
+
+        .hobby-group {
+            line-height: 1.8;
+        }
+
+        .hobby-group label {
+            margin-right: 10px;
+        }
+
+        .button-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        button, input[type="reset"] {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+            padding: 2px 10px;
+            margin-left: 4px;
+            background-color: #f0f0f0;
+            border: 1px solid #707070;
+            cursor: pointer;
+        }
+
+        button:hover, input[type="reset"]:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>FORMULIR BIODATA DIRI</h2>
+        
+        <hr>
+        <div class="section-title">Isilah biodata anda dengan lengkap pada form di bawah ini..!</div>
+        <hr>
+
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Nama Lengkap</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td class="label">Tempat/Tgl/Jam Lahir</td>
+                    <td>
+                        <div class="inline-inputs">
+                            <input type="text" name="tempat_lahir"> - 
+                            <input type="date" name="tgl_lahir"> - 
+                            <input type="time" name="jam_lahir">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Jenis Kelamin</td>
+                    <td>
+                        <label><input type="radio" name="jk" value="Laki-laki" checked> Laki-laki</label>
+                        <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Agama</td>
+                    <td>
+                        <select name="agama">
+                            <option value="Islam" selected>Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Alamat Rumah</td>
+                    <td><textarea name="alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label">No. Telpon</td>
+                    <td><input type="tel" name="telpon" value="+628123456789"></td>
+                </tr>
+                <tr>
+                    <td class="label">E-Mail</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td class="label">URL</td>
+                    <td><input type="url" name="url" placeholder="https://"></td>
+                </tr>
+                <tr>
+                    <td class="label">Warna Kesukaan</td>
+                    <td><input type="color" name="warna_kesukaan" value="#000000"></td>
+                </tr>
+                <tr>
+                    <td class="label">Hobby</td>
+                    <td>
+                        <div class="hobby-group">
+                            <label><input type="checkbox" name="hobby[]" value="Komputer"> Komputer</label>
+                            <label><input type="checkbox" name="hobby[]" value="Musik"> Musik</label>
+                            <label><input type="checkbox" name="hobby[]" value="Olahraga"> Olahraga</label>
+                            <label><input type="checkbox" name="hobby[]" value="Jalan-jalan"> Jalan-jalan</label><br>
+                            <label><input type="checkbox" name="hobby[]" value="Lainnya"> Lainnya</label>
+                            <input type="text" name="hobby_lainnya" style="width: 130px;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Upload Foto (3x4)</td>
+                    <td><input type="file" name="foto" accept="image/*"></td>
+                </tr>
+            </table>
+
+            <hr>
+            <div class="section-title">Isilah Username dan Password baru anda di bawah ini..!</div>
+            <hr>
+
+            <table>
+                <tr>
+                    <td class="label">Username Baru</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td class="label">Password Baru</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td class="label">Konfirmasi Password</td>
+                    <td><input type="password" name="konfirmasi_password"></td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <div class="button-container">
+                <button type="submit">Submit</button>
+                <input type="reset" value="Batal">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

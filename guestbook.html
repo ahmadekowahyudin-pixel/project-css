@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>css project kelas 3 B</title>
+  </head>
+  <body>
+    <!-- top menu -->
+    <div class="top-menu">
+      <ul>
+        <li>
+          <a href="mailto: 12550311831@students.uin-suska.ac.id">E-Mail</a>
+        </li>
+        <li><a href="https://wa.me/085279041963">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/243.ah/">Instagram</a></li>
+        <li>
+          <a href="https://www.facebook.com/ahmadekowahyudin">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UC1g0k5J6x3Z7z8F9G5K5G5A"
+            >YouTube</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- header -->
+    <div class="header"></div>
+
+    <div class="nav-bar">
+      <div class="menu-bar">
+        <a href="index.html">HOME</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="article.html">ARTICLE</a>
+        <a href="guestbook.html">GUESTBOOK</a>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="tutorial.html">TUTORIAL</a>
+      </div>
+      <form action="">
+        <input type="search" placeholder="Cari disini.." />
+        <input type="submit" value="Cari" />
+      </form>
+    </div>
+
+    <div class="konten">
+      <div class="kiri">
+        <fieldset>
+          <legend>MENU UTAMA</legend>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="profile.html">PROFILE</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="article.html">ARTICLE</a></li>
+            <li><a href="guestbook.html">GUESTBOOK</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="tutorial.html">TUTORIAL</a></li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>GALLERY</legend>
+          <marquee behavior="scroll" direction="right" scrollamount="5">
+            <img src="gambar/gambar1.jpeg" alt="Foto 1" />
+            <img src="gambar/gambar2.jpeg" alt="Foto 2" />
+            <img src="gambar/gambar3.jpeg" alt="Foto 3" />
+            <img src="gambar/gambar4.jpeg" alt="Foto 4" />
+            <img src="gambar/gambar5.jpeg" alt="Foto 5" />
+          </marquee>
+        </fieldset>
+      </div>
+
+      <div class="kanan">
+        <!-- Isi Konten Buku Tamu -->
+        <div class="guestbook-container">
+          <h2>Isi Buku Tamu</h2>
+          <p>
+            Senang anda berkunjung kesini! yuk, tinggalkan pesan atau kritik
+            membangun yang akan langsung masuk ke email saya
+          </p>
+
+          <form
+            action="mailto:12550311831@students.uin-suska.ac.id"
+            method="post"
+            enctype="text/plain"
+            class="guestbook-form"
+          >
+            <table border="0" width="100%">
+              <tr>
+                <td width="20%"><label for="nama">Nama:</label></td>
+                <td>
+                  <input type="text" id="nama" name="Nama" required />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                  <input type="email" id="email" name="Email" required />
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><label for="pesan">Pesan:</label></td>
+                <td>
+                  <textarea
+                    id="pesan"
+                    name="Pesan"
+                    rows="5"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="submit" value="Kirim Pesan" class="btn-submit" />
+                  <input type="reset" value="Reset" class="btn-reset" />
+                </td>
+              </tr>
+            </table>
+          </form>
+
+          <p class="guestbook-note">
+            <em>
+              Catatan: Mengklik "Kirim Pesan" akan membuka aplikasi email
+              default di perangkat Anda (seperti Gmail, Outlook, atau Mail)
+              untuk menyelesaikan pengiriman.
+            </em>
+          </p>
+        </div>
+        <!-- Akhir Isi Konten Buku Tamu -->
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        pemograman web kelas 3b<br />program studi sistem informasi<br />uin
+        sultan syarif kasim riau &copy; 2026
+      </p>
+    </div>
+  </body>
+</html>
